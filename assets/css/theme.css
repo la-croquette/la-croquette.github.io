@@ -80,7 +80,7 @@ a:hover {
             top: 0;
             right : 60px;  
 }
-.dropdownArtist {
+.dropdownArtist , .dropdownConcert{
   position: relative;
   display: inline-block;
 }
@@ -99,7 +99,7 @@ a:hover {
 }
 
 /* 添加倒三角 */
-.dropbtn::before , .dropbtnArtist::before{
+.dropbtn::before , .dropbtnArtist::before {
   content: "";
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
@@ -130,6 +130,10 @@ a:hover {
 
 
 .dropdownArtist:hover .dropdown-content {
+  display: block;
+  width: 100%;
+}
+.dropdownConcert:hover .dropdown-content {
   display: block;
   width: 100%;
 }
