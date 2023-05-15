@@ -11,12 +11,19 @@
      <!-- 设置图标 -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico">
      <!-- 引入样式列表 -->
-    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
       <!-- 导入Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- 导入font-awesome -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-      
+    <!-- 导入JS -->
+	<script >
+	var windowWidth = window.innerWidth;
+   // 如果是手机设备或窗口宽度小于1320像素，进行跳转
+    if (windowWidth < 1320) {
+    window.location.href = "https://la-croquette.github.io/CercleJasmin/ning.html"; // 替换为您要跳转的页面的URL
+}
+</script>
 </head>
 <body>
 <div class="intro flex ">
@@ -27,7 +34,7 @@
         <li class = "dropdownConcert">
 			<a class = "dropbtn nav-a" href="#">Concert du Bonheur</a>
           <ul class="dropdown-content">
-             <li><a class = "nav-a" href="#">Min Kuang</a></li>
+             <li><a class = "nav-a" href="#">Le printemps et La poéosie</a></li>
              <li><a class = "nav-a" href="#">Xinhui Wang</a></li>
              <li><a class = "nav-a" href="#">John Smith</a></li>
              <li><a class = "nav-a" href="#">Jane Doe</a></li>
@@ -38,8 +45,8 @@
         <li class="dropdownArtist">
          <a class ="dropbtn nav-a" href="#">Artistes associés</a>
           <ul class="dropdown-content">
-             <li><a class = "nav-a" href="#">Min Kuang</a></li>
-             <li><a class = "nav-a" href="#">Xinhui Wang</a></li>
+             <li><a class = "nav-a" href="https://minkuang.jimdo.com/">Min Kuang</a></li>
+             <li><a class = "nav-a" href="ning.html">Xinhui Wang</a></li>
              <li><a class = "nav-a" href="#">John Smith</a></li>
              <li><a class = "nav-a" href="#">Jane Doe</a></li>
              <li><a class = "nav-a" href="#">Tom Johnson</a></li>
@@ -93,9 +100,9 @@
     				</div>
     			</div>
     			<div class="card card-pin">
-    				<img class="card-img" src="https://images.unsplash.com/photo-1519996521430-02b798c1d881?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79f770fc1a5d8ff9b0eb033d0f09e15d&auto=format&fit=crop&w=500&q=60" alt="Card image">
+    				<img class="card-img" src="./assets/img/artist/Xinhui_Wang.JPG" alt="Card image">
     				<div class="overlay">
-    					<h2 class="card-title title">Cool Title</h2>
+    					<h2 class="card-title title">Xinhui Wang</h2>
     					<div class="more">
     						<a href="post.html">
     						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
@@ -103,9 +110,9 @@
     				</div>
     			</div>
     			<div class="card card-pin">
-    				<img class="card-img" src="https://images.unsplash.com/photo-1505210512658-3ae58ae08744?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ef2e23adda7b89a804cf232f57e3ca3&auto=format&fit=crop&w=333&q=80" alt="Card image">
+    				<img class="card-img" src="./assets/img/concert/230422.JPG" alt="Card image">
     				<div class="overlay">
-    					<h2 class="card-title title">Cool Title</h2>
+    					<h2 class="Le printemps et La poéosie"></h2>
     					<div class="more">
     						<a href="post.html">
     						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
@@ -292,11 +299,11 @@
       <div class="footer-left">
         <h3>Développeur</h3>
         <p>ZHAN NING</p>
-        <p>Email : zhan.ning@imt-atlantique.net</p>
+        <p>Adress : 1 Av.Pierre Masse Paris 75014</p>
       </div>
       <div class="footer-right">
         <h3>Contact</h3>
-        <p>Adress : 1 Av.Pierre Masse Paris 75014</p>
+    <p>Email : zhan.ning@imt-atlantique.net</p>
         <p>Tél : +33 760155973</p>
       </div>
     </div>

@@ -14,10 +14,8 @@ body {
 	width:100%;
 	text-align:center;
 	color:#fff;
-	  background-image: url('../img/main/MainBackground_white.jpg');
-   
-    /* background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('../img/MainBackground_white.jpg'); */
-    background-size:cover;
+	background-image: url('../img/main/MainBackground_white.jpg');
+  background-size:cover;
 
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -64,7 +62,7 @@ li {
   transition: all 0.3s ease; /* 添加过渡效果 */
   font-family: 'PTSerif-Regular';
 }
-a:hover {
+nav-a:hover {
   background-color:#FFFFF0 ; /* 鼠标悬停时修改背景色 */
   color:#87ceeb   /* 鼠标悬停时修改文字颜色 */
 }
@@ -439,16 +437,16 @@ h2 {
     font-size: 14px;
     position: absolute;
     bottom: 0;
-    right: 0;
-    text-transform: uppercase;
+    right: 0;   
     -webkit-transform: translate(-20%, -20%);
     transform: translate(-20%, -20%);
     -ms-transform: translate(-50%, -50%);
+
 }
 .more a {
   color: #fff;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PTSerif-Regular';
 }
 .fa-arrow-circle-o-right {
     margin-right: 5px;
