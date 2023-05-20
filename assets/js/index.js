@@ -1,7 +1,9 @@
-// 检测设备类型和窗口宽度
-var windowWidth = window.innerWidth;
+// redirect.js 文件中的代码
+// 检测设备类型
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-// 如果是手机设备或窗口宽度小于1320像素，进行跳转
-if (windowWidth < 1320) {
-  window.location.href = "./ning.html"; // 替换为您要跳转的页面的URL
+// 如果是手机设备，进行跳转
+if (isMobile) {
+  window.location.href = "https://la-croquette.github.io/CercleJasmin/ning.html";
 }
+

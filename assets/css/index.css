@@ -62,7 +62,7 @@ li {
   transition: all 0.3s ease; /* 添加过渡效果 */
   font-family: 'PTSerif-Regular';
 }
-nav-a:hover {
+.nav-a:hover {
   background-color:#FFFFF0 ; /* 鼠标悬停时修改背景色 */
   color:#87ceeb   /* 鼠标悬停时修改文字颜色 */
 }
@@ -157,7 +157,7 @@ nav-a:hover {
 }
 .intro .intro-body .brand-heading {
 	font-size:60px;
- font-family: 'DancingScript', sans-serif;
+  font-family: 'DancingScript', sans-serif;
 }
 
 .justify-content-center{  
@@ -419,6 +419,8 @@ img {
     margin-bottom: 0;
     text-align: center;
     font-size: 24px;
+    font-family: 'PTSerif-Regular';
+    font-weight: 500;
 }
 h2 {
     display: block;
@@ -482,13 +484,12 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction:column;
-
 }
 
 h3 {
   font-size: 18px;
   margin-bottom: 10px;
-    text-align: center;
+  text-align: center;
 }
 
 p {
@@ -503,4 +504,10 @@ p {
 }
 
 
-
+.avatar {
+      margin-top: 10px;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+    }
