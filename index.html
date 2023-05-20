@@ -20,43 +20,13 @@
     <script src="./assets/js/index.js"></script>
 </head>
 <body>
-<div class="intro flex ">
-   <div class = "nav">
-      <ul>
-        <li><a class = "nav-a" href="#">Pourquoi le Cercle Jasmin ?</a></li>
-        <li><a class = "nav-a" href="#">Etre Adhérent</a></li>
-        <li class = "dropdownConcert">
-			<a class = "dropbtn nav-a" href="#">Concert du Bonheur</a>
-          <ul class="dropdown-content">
-             <li><a class = "nav-a" href="#">Le printemps et La poéosie</a></li>
-             <li><a class = "nav-a" href="#">Xinhui Wang</a></li>
-             <li><a class = "nav-a" href="#">John Smith</a></li>
-             <li><a class = "nav-a" href="#">Jane Doe</a></li>
-             <li><a class = "nav-a" href="#">Tom Johnson</a></li>
-          </ul>			
-		</li>
-        <li><a class = "nav-a" href="#">Vidéos</a></li>
-        <li class="dropdownArtist">
-         <a class ="dropbtn nav-a" href="#">Artistes associés</a>
-          <ul class="dropdown-content">
-             <li><a class = "nav-a" href="https://minkuang.jimdo.com/">Min Kuang</a></li>
-             <li><a class = "nav-a" href="ning.html">Xinhui Wang</a></li>
-             <li><a class = "nav-a" href="#">John Smith</a></li>
-             <li><a class = "nav-a" href="#">Jane Doe</a></li>
-             <li><a class = "nav-a" href="#">Tom Johnson</a></li>
-          </ul>
-        </li>
-       <li><a class = "nav-a" href="#">Contact</a></li>
-      </ul> 
-     <div class="dropdownLanguage" >
-            <a class="dropbtn nav-a">FR</a> 
-            <div class="dropdown-content">
-            <a class = "nav-a" href="#">CN</a>
-            </div>
-      </div>
-  </div> <!-- nav-bar结束了 -->
-  
 
+
+
+
+<div class="intro">  
+
+<header id="header-container" ></header>
 
   <div class="intro-body">
 
@@ -287,18 +257,8 @@
     	</div>
     </div>
     </section>
+	
 <footer id="footer-container"></footer>
-
-<script>
-  window.onload = function() {
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        var footerContainer = document.getElementById('footer-container');
-        footerContainer.innerHTML = data;
-      });
-  };
-</script>
 
 </body>
 </html>
