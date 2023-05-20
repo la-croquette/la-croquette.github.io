@@ -287,27 +287,18 @@
     	</div>
     </div>
     </section>
-<footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-left">
-        <h3>Développeur</h3>
-        <p>ZHAN NING</p>
-        <p>Adress : 1 Av.Pierre Masse Paris 75014</p>
-      </div>
-	  <div class="avatar">
-      <img src="./assets/img/artist/Zhan_Ning.png" alt="Avatar">
-      </div>
-      <div class="footer-right">
-        <h3>Contact</h3>
-    <p>Email : zhan.ning@imt-atlantique.net</p>
-        <p>Tél : +33 760155973</p>
-      </div>
-    </div>
-    <p class="footer-bottom">Copy right &copy; 2023 ZHAN NING</p>
-  </div>
-</footer>
+<footer id="footer-container"></footer>
 
-    
+<script>
+  window.onload = function() {
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        var footerContainer = document.getElementById('footer-container');
+        footerContainer.innerHTML = data;
+      });
+  };
+</script>
+
 </body>
 </html>
