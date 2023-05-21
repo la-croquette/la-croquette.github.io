@@ -227,6 +227,7 @@ section:after {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    
 }
 
 .card:hover .overlay {
@@ -241,9 +242,8 @@ section:after {
     margin-bottom: 0.75rem;
 }
 .card-columns {
-    -webkit-column-count: 4;
+
     column-count: 4;  /*这个属性会决定每行有多少张照片*/
-    -webkit-column-gap: 1.25rem;
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
