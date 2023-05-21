@@ -24,10 +24,11 @@
 .footer-content {
   display: flex;
   justify-content: center;
+   align-items: center;
 }
 
-.footer-left,
-.footer-right {
+.footer-left, .footer-right
+ {
   flex:1;
   display: flex;
   justify-content: center;
@@ -58,7 +59,7 @@ p {
       width: 100px;
       height: 100px;
       overflow: hidden;
-    }
+          }
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -76,6 +77,10 @@ img {
   src: url('assets/css/fonts/PTSerif-Regular.ttf') format('truetype');
   font-weight: bold;
 }
+  .button-img {
+      width: 100px;
+      height: 100px;
+  }
 </style>
 </head>
 <body>
@@ -90,7 +95,11 @@ img {
 	  <div class="avatar">
       <img src="./assets/img/artist/Zhan_Ning.png" alt="Avatar">
       </div>
-      <div class="footer-right">
+   <div style="width: 10px; height: 100px;"></div>  
+        <a class = "button-img"href="index.html">
+  <img src="assets/img/Jasmin.png" alt="Button Image">
+     </a>
+  <div class="footer-right">
         <h3>Contact</h3>
     <p>Email : zhan.ning@imt-atlantique.net</p>
         <p>Tél : +33 760155973</p>
