@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css">
     <title>header</title>
     <style>
 .nav {
@@ -44,6 +43,7 @@ li {
   border-radius: 5px; /* 设置链接圆角 */
   transition: all 0.3s ease; /* 添加过渡效果 */
   font-family: 'PTSerif-Regular';
+
   
 }
 .nav-a:hover {
@@ -129,18 +129,28 @@ li {
   color:#87ceeb ;   /* 鼠标悬停时修改文字颜色 */
 }
 
+@font-face {
+  font-family: 'DancingScript';
+  src: url('assets/css/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PTSerif';
+  src: url('assets/css/fonts/PTSerif-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
 
     </style>
 </head>
 <body>
     <div class = "nav">
       <ul>
-        <li><a class = "nav-a" href="#">Pourquoi le Cercle Jasmin ?</a></li>
+        <li><a class = "nav-a" href="Pourquoi.html">Pourquoi le Cercle Jasmin ?</a></li>
         <li><a class = "nav-a" href="#">Etre Adhérent</a></li>
         <li class = "dropdownConcert">
 			<a class = "dropbtn nav-a" href="#">Concert du Bonheur</a>
           <ul class="dropdown-content">
-             <li><a class = "nav-a" href="#">Le printemps et La poéosie</a></li>
+             <li><a class = "nav-a" href="#">22 Avril 2023</a></li>
              <li><a class = "nav-a" href="#">Xinhui Wang</a></li>
              <li><a class = "nav-a" href="#">John Smith</a></li>
              <li><a class = "nav-a" href="#">Jane Doe</a></li>

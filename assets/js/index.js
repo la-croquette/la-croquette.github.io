@@ -1,10 +1,10 @@
-// redirect.js 文件中的代码
 // 检测设备类型
 let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+let isSmallScreen = window.innerWidth < 1300;
 
-// 如果是手机设备，进行跳转
-if (isMobile) {
-  window.location.href = "https://la-croquette.github.io/CercleJasmin/ning.html";
+// 如果是手机设备或屏幕尺寸小于1300，进行跳转
+if (isMobile || isSmallScreen) {
+  window.location.href = "https://la-croquette.github.io/CercleJasmin/footer.html";
 }
 
 window.onload = function() {
