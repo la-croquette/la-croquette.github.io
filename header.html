@@ -62,7 +62,7 @@ li {
 .dropdownLanguage {
   position: fixed;
             top: 0;
-            right : 60px;  
+            right : 10px;  
 }
 .dropdownArtist , .dropdownConcert{
   position: relative;
@@ -141,38 +141,59 @@ li {
   src: url('assets/css/fonts/PTSerif-Regular.ttf') format('truetype');
   font-weight: bold;
 }
+@media (max-width: 1250px) {
+  .contact {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .artistes {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .video {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .concert {
+    display: none;
+  }
+}
 
     </style>
 </head>
 <body>
-    <div class = "nav">
-      <ul>
-        <li><a class = "nav-a" href="pourquoi.html">Pourquoi le Cercle Jasmin ?</a></li>
-        <li><a class = "nav-a" href="membre.html">Etre Adhérent</a></li>
-        <li class = "dropdownConcert">
-			<a class = "dropbtn nav-a" href="#">Concert du Bonheur</a>
-          <ul class="dropdown-content">
-             <li><a class = "nav-a" href="#">22 Avril 2023</a></li>
-             <li><a class = "nav-a" href="#">Xinhui Wang</a></li>
-             <li><a class = "nav-a" href="#">John Smith</a></li>
-             <li><a class = "nav-a" href="#">Jane Doe</a></li>
-             <li><a class = "nav-a" href="#">Tom Johnson</a></li>
-          </ul>			
-		</li>
-        <li><a class = "nav-a" href="video.html">Vidéos</a></li>
-        <li class="dropdownArtist">
-         <a class ="dropbtn nav-a" href="#">Artistes associés</a>
-          <ul class="dropdown-content">
-             <li><a class = "nav-a" href="https://minkuang.jimdo.com/">Min Kuang</a></li>
-             <li><a class = "nav-a" href="ning.html">Xinhui Wang</a></li>
-             <li><a class = "nav-a" href="#">John Smith</a></li>
-             <li><a class = "nav-a" href="#">Jane Doe</a></li>
-             <li><a class = "nav-a" href="#">Tom Johnson</a></li>
-          </ul>
-        </li>
-       <li><a class = "nav-a" href="contact.html">Contact</a></li>
-      </ul> 
-     <div class="dropdownLanguage" >
+    <div class = "nav">     
+      <a class = "nav-a" href="pourquoi.html">Pourquoi le Cercle Jasmin ?</a>
+      <a class = "nav-a" href="membre.html">Etre Adhérent</a>
+   <div class = "dropdownConcert">
+			     <a class = "dropbtn nav-a concert" href="#">Concert du Bonheur</a>
+         <div class="dropdown-content">
+             <a class = "nav-a" href="#">22 Avril 2023</a>
+             <a class = "nav-a" href="#">Xinhui Wang</a>
+             <a class = "nav-a" href="#">John Smith</a>
+             <a class = "nav-a" href="#">Jane Doe</a>
+             <a class = "nav-a" href="#">Tom Johnson</a>
+         </div>		
+   </div>		
+
+        <a class = "nav-a video" href="video.html">Vidéos</a>
+        <div class="dropdownArtist">
+         <a class ="dropbtn nav-a artistes" href="#">Artistes associés</a>
+          <div class="dropdown-content">
+             <a class = "nav-a" href="https://minkuang.jimdo.com/">Min Kuang</a>
+             <a class = "nav-a" href="ning.html">Xinhui Wang</a>
+             <a class = "nav-a" href="#">John Smith</a>
+             <a class = "nav-a" href="#">Jane Doe</a>
+             <a class = "nav-a" href="#">Tom Johnson</a>
+          </div>
+              </div>		
+        
+       <a class = "nav-a contact" href="contact.html">Contact</a>
+       
+     <div class="dropdownLanguage">
             <a class="dropbtn nav-a">FR</a> 
             <div class="dropdown-content">
             <a class = "nav-a" href="#">CN</a>
